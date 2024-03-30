@@ -1,7 +1,9 @@
 package com.exampleo1.carecompass;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,15 +27,29 @@ public class loginActivity extends AppCompatActivity {
         btn = findViewById(R.id.buttonLogin);
         tv = findViewById(R.id.textViewNewUser);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 String username = edUsername.getText().toString();
                 String password = edPassword.getText().toString();
+                Database db = new Database(getApplicationContext(), "CareCompass", null, 1);
+
                 if(username.length()==0 || password.length()==0) {
                     Toast.makeText(getApplicationContext(), "Please fill All details", Toast.LENGTH_SHORT).show();
                 }else{
-                    Toast.makeText(getApplicationContext(),"Logic Success",Toast.LENGTH_SHORT).show();
+                    if(db.login(username, password)==1){
+                        Toast.makeText(getApplicationContext(),"Logic Success",Toast.LENGTH_SHORT).show();
+                        SharedPreferences sharedpreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedpreferences.edit();
+                        editor.putString("username", username);
+
+                        editor.apply();
+
+                        startActivity(new Intent(loginActivity.this,HomeActivity2.class));
+                    }else{
+                        Toast.makeText(getApplicationContext(),"Invalid Username and Password",Toast.LENGTH_SHORT).show();
+                    }
+
                 }
 
             }
