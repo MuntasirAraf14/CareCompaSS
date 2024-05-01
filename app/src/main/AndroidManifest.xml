@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CareCompass">
         <activity
+            android:name="com.LabTestDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.LabTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Book_Appointment2"
+            android:exported="false" />
+        <activity
             android:name=".DoctorDetailsActivity_2"
             android:exported="false" />
         <activity

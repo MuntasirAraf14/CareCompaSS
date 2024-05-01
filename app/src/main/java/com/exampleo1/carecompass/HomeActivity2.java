@@ -14,6 +14,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.LabTestActivity;
+
 public class HomeActivity2 extends AppCompatActivity {
 
     @Override
@@ -40,6 +42,14 @@ public class HomeActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity2.this, FindDoctorActivity2.class));
+            }
+        });
+
+        CardView labTest = findViewById(R.id.cardLabTest);
+        labTest.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                startActivity(new Intent(HomeActivity2.this, LabTestActivity.class));
             }
         });
 

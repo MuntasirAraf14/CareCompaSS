@@ -1,24 +1,18 @@
 package com.exampleo1.carecompass;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class DoctorDetailsActivity_2 extends AppCompatActivity {
     private String[][] doctor_details1 = {
@@ -73,7 +67,7 @@ public class DoctorDetailsActivity_2 extends AppCompatActivity {
         setContentView(R.layout.activity_doctor_details2);
 
         tv = findViewById(R.id.textViewDDTitle);
-        btn = findViewById(R.id.buttonDDBack);
+        btn = findViewById(R.id.buttonLTBack);
         Intent it = getIntent();
         String title = it.getStringExtra("title");
         tv.setText(title);
@@ -119,9 +113,24 @@ public class DoctorDetailsActivity_2 extends AppCompatActivity {
                 new String[]{"line1","line2","line3","line4","line5"},
                 new int[]{R.id.line_a,R.id.line_b,R.id.line_c,R.id.line_d,R.id.line_e}
         );
-        ListView lst = findViewById(R.id.listViewDD);
+        ListView lst = findViewById(R.id.listViewLT);
         lst.setAdapter(sa);
 
+         lst.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent it = new Intent(DoctorDetailsActivity_2.this, Book_Appointment2.class);
+                it.putExtra("text1", title);
+                it.putExtra("text2", doctor_details[i][0]);
+                it.putExtra("text3", doctor_details[i][1]);
+                it.putExtra("text4", doctor_details[i][3]);
+                it.putExtra("text5", doctor_details[i][4]);
+                startActivity(it);
+
+            }
+
+        });
 
     }
 }
