@@ -1,7 +1,5 @@
 package com;
 
-import static com.exampleo1.carecompass.R.id.buttonLTGoToCart;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -63,9 +61,9 @@ public class LabTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab_test);
 
-        btnGoToCart = findViewById(R.id.buttonLTGoToCart);
-        btnBack = findViewById(R.id.buttonLTBack);
-        listView = findViewById(R.id.listViewLT);
+        btnGoToCart = findViewById(R.id.buttonCardCheckout);
+        btnBack = findViewById(R.id.buttonCardBack);
+        listView = findViewById(R.id.listViewCard);
 
         btnBack.setOnClickListener(new View.OnClickListener(){
            @Override
@@ -99,6 +97,13 @@ public class LabTestActivity extends AppCompatActivity {
                 it.putExtra("text2", package_details[i]);
                 it.putExtra("text3", packages[i][4]);
                 startActivity(it);
+            }
+        });
+
+        btnGoToCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LabTestActivity.this,CardLabActivity.class));
             }
         });
 
