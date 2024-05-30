@@ -79,7 +79,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="24*7 HealthCare"
+        android:text="CareCompass"
         android:textColor="@color/purple_200"
         android:textColorHint="#0C0C0C"
         android:textColorLink="#15B6A7"

@@ -176,7 +176,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewCartTotalCost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -188,7 +188,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextAppFees"/>
 
     <Button
-        android:id="@+id/buttonAppDate"
+        android:id="@+id/buttonCardTime"
         style="?android:spinnerStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -197,6 +197,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewCartTotalCost" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

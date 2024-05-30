@@ -28,7 +28,7 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
-        android:text="Top Doctors"
+        android:text="Doctor Type"
         android:textColor="#fff777"
         android:textSize="20sp"
         android:textStyle="bold"

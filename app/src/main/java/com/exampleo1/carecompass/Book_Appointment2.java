@@ -12,11 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import java.util.Calendar;
 
@@ -37,7 +33,7 @@ public class Book_Appointment2 extends AppCompatActivity {
         ed2 = findViewById(R.id.editTextAppAdress);
         ed3 = findViewById(R.id.editTextAppContactNumber);
         ed4 = findViewById(R.id.editTextAppAdress);
-        dateButton = findViewById(R.id.buttonAppDate);
+        dateButton = findViewById(R.id.buttonCardTime);
         timeButton = findViewById(R.id.buttonAppTime);
         btnBook = findViewById(R.id.buttonBookAppointment);
         btnBack = findViewById(R.id.buttonAppBack);

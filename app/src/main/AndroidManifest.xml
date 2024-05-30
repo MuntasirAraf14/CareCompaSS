@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CareCompass">
         <activity
+            android:name="com.LabTestBookActivity"
+            android:exported="false" />
+        <activity
             android:name="com.CardLabActivity"
             android:exported="false" />
         <activity
