@@ -1,4 +1,5 @@
-package com;
+package com.exampleo1.carecompass;
+
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
@@ -6,6 +7,7 @@ import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button; // Correct import for Button
@@ -54,7 +56,7 @@ public class CardLabActivity extends AppCompatActivity {
         String username = sharedpreferences.getString("username", "").toString();
 
 
-        Database d = new Database(getApplicationContext(), "tuktuk", null, 1);
+        Database d = new Database(CardLabActivity.this.getApplicationContext(), "CareCompass", (SQLiteDatabase.CursorFactory)null, 1);
 
 
         float totalAmount = 0;
@@ -67,7 +69,7 @@ public class CardLabActivity extends AppCompatActivity {
             packages[i] = new String[5];
         }
 
-        for(int i=0; i<dData.size(); i++){
+       for(int i=0; i<dData.size(); i++){
             String arrData = dData.get(i).toString();
             String[] strData = arrData.split(java.util.regex.Pattern.quote("$"));
             packages[i][0] = strData[0];

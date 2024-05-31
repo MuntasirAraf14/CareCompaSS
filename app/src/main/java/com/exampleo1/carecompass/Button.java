@@ -1,4 +1,4 @@
-package com;
+package com.exampleo1.carecompass;
 
 import android.view.View;
 

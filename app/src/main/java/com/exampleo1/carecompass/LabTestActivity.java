@@ -1,4 +1,4 @@
-package com;
+package com.exampleo1.carecompass;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,9 +10,6 @@ import android.widget.SimpleAdapter;
 import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Button;
 
-
-import com.exampleo1.carecompass.HomeActivity2;
-import com.exampleo1.carecompass.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -92,7 +89,7 @@ public class LabTestActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent it = new Intent(LabTestActivity.this,LabTestDetailsActivity.class);
+                Intent it = new Intent(LabTestActivity.this, LabTestDetailsActivity.class);
                 it.putExtra("text1", packages[i][0]);
                 it.putExtra("text2", package_details[i]);
                 it.putExtra("text3", packages[i][4]);

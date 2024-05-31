@@ -1,4 +1,4 @@
-package com;
+package com.exampleo1.carecompass;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,14 +10,7 @@ import android.widget.TextView;
 import android.widget.Button;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import com.exampleo1.carecompass.Database;
-import com.exampleo1.carecompass.R;
 
 public class LabTestDetailsActivity extends AppCompatActivity {
     TextView tvPackageName, tvTotalCost;
@@ -43,7 +36,7 @@ public class LabTestDetailsActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                startActivity(new Intent( LabTestDetailsActivity.this,LabTestActivity.class));
+                startActivity(new Intent( LabTestDetailsActivity.this, LabTestActivity.class));
             }
         });
 
