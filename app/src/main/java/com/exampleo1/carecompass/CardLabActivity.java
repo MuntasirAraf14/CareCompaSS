@@ -56,11 +56,11 @@ public class CardLabActivity extends AppCompatActivity {
         String username = sharedpreferences.getString("username", "").toString();
 
 
-        Database d = new Database(CardLabActivity.this.getApplicationContext(), "CareCompass", (SQLiteDatabase.CursorFactory)null, 1);
+        Database db = new Database(CardLabActivity.this.getApplicationContext(), "CareCompass", (SQLiteDatabase.CursorFactory)null, 1);
 
 
         float totalAmount = 0;
-        ArrayList dData = d.getCartData(username, "lab");
+        ArrayList dData = db.getCartData(username, "lab");
         //Toast.makeText(getApplicationContext(),""+dbData,Toast.LENGTH_LONG).show();
 
 
