@@ -67,7 +67,7 @@ public class DoctorDetailsActivity_2 extends AppCompatActivity {
         setContentView(R.layout.activity_doctor_details2);
 
         tv = findViewById(R.id.textViewDDTitle);
-        btn = findViewById(R.id.buttonCardBack);
+        btn = findViewById(R.id.buttonBMCardBack);
         Intent it = getIntent();
         String title = it.getStringExtra("title");
         tv.setText(title);
@@ -113,7 +113,7 @@ public class DoctorDetailsActivity_2 extends AppCompatActivity {
                 new String[]{"line1","line2","line3","line4","line5"},
                 new int[]{R.id.line_a,R.id.line_b,R.id.line_c,R.id.line_d,R.id.line_e}
         );
-        ListView lst = findViewById(R.id.listViewCard);
+        ListView lst = findViewById(R.id.listViewBMCard);
         lst.setAdapter(sa);
 
          lst.setOnItemClickListener(new AdapterView.OnItemClickListener() {

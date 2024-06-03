@@ -8,7 +8,7 @@
     tools:context=".LabTestActivity">
 
     <Button
-        android:id="@+id/buttonCardCheckout"
+        android:id="@+id/buttonBMCardCheckout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
@@ -65,7 +65,7 @@
         app:layout_constraintVertical_bias="0.016" />
 
     <ListView
-        android:id="@+id/listViewCard"
+        android:id="@+id/listViewBMCard"
         android:layout_width="350dp"
         android:layout_height="520dp"
         android:layout_margin="10dp"
@@ -80,7 +80,7 @@
         app:layout_constraintVertical_bias="0.629" />
 
     <Button
-        android:id="@+id/buttonCardBack"
+        android:id="@+id/buttonBMCardBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"

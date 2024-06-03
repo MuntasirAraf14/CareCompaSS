@@ -16,15 +16,9 @@ import android.widget.ListView;
 import android.widget.TimePicker;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.exampleo1.carecompass.Database;
-import com.exampleo1.carecompass.R;
-
-import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
@@ -45,12 +39,12 @@ public class CardLabActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_lab);
 
-        dateButton = findViewById(R.id.buttonCardDate);
+        dateButton = findViewById(R.id.buttonBMCardDate);
         timeButton = findViewById(R.id.buttonCardTime);
-        btnCheckout = findViewById(R.id.buttonCardCheckout);
-        btnBack = findViewById(R.id.buttonCardBack);
-        tvTotal = findViewById(R.id.textViewCartTotalCost);
-        lst= findViewById(R.id.listViewCard);
+        btnCheckout = findViewById(R.id.buttonBMCardCheckout);
+        btnBack = findViewById(R.id.buttonBMCardBack);
+        tvTotal = findViewById(R.id.textViewBMCartTotalCost);
+        lst= findViewById(R.id.listViewBMCard);
 
         SharedPreferences sharedpreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
         String username = sharedpreferences.getString("username", "").toString();

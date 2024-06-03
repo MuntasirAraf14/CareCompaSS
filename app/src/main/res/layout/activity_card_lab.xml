@@ -8,7 +8,7 @@
     tools:context="com.CardLabActivity">
 
         <TextView
-            android:id="@+id/textViewCartTotalCost"
+            android:id="@+id/textViewBMCartTotalCost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -17,7 +17,7 @@
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/listViewCard" />
+            app:layout_constraintTop_toBottomOf="@id/listViewBMCard" />
 
         <Button
             android:id="@+id/buttonCardTime"
@@ -41,10 +41,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.928"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewCartTotalCost" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewBMCartTotalCost" />
 
         <Button
-            android:id="@+id/buttonCardCheckout"
+            android:id="@+id/buttonBMCardCheckout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
@@ -86,7 +86,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textViewDDName"
             app:layout_constraintVertical_bias="0.012" />
         <TextView
-            android:id="@+id/textViewCardTitle"
+            android:id="@+id/textViewBMCardTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lab Test and Packages"
@@ -100,7 +100,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textViewDDName"
             app:layout_constraintVertical_bias="0.071" />
         <ListView
-            android:id="@+id/listViewCard"
+            android:id="@+id/listViewBMCard"
             android:layout_width="358dp"
             android:layout_height="338dp"
             android:layout_margin="10dp"
@@ -116,7 +116,7 @@
             app:layout_constraintVertical_bias="0.166" />
 
         <Button
-            android:id="@+id/buttonCardBack"
+            android:id="@+id/buttonBMCardBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
@@ -136,12 +136,12 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.082"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textViewCartTotalCost"
+            app:layout_constraintTop_toBottomOf="@id/textViewBMCartTotalCost"
             tools:layout_editor_absoluteX="27dp"
             tools:layout_editor_absoluteY="594dp" />
 
         <Button
-            android:id="@+id/buttonCardDate"
+            android:id="@+id/buttonBMCardDate"
             style="?android:spinnerStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
