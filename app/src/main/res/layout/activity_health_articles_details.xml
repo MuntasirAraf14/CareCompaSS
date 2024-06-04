@@ -18,9 +18,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_logo3"
-        tools:layout_editor_absoluteY="74dp" />
+        app:layout_constraintVertical_bias="0.015" />
 
     <TextView
         android:id="@+id/textView_logo3"
@@ -32,10 +33,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.614"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <Button
         android:id="@+id/buttonHADBack"
@@ -46,8 +47,10 @@
         android:text="BACK"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewHAD" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewHAD"
+        app:layout_constraintVertical_bias="0.59" />
 
     <ImageView
         android:id="@+id/imageViewHAD"
