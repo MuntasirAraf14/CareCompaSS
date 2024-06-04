@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CareCompass">
         <activity
+            android:name=".HealthArticlesDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".HealthArticlesActivity"
             android:exported="false" />
         <activity

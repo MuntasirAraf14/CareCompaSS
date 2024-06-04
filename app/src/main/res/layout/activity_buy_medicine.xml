@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/textView_title"
+        android:id="@+id/textViewHATitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Delivery Location: Khulna"
@@ -44,10 +44,10 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="40dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView_title"
+        app:layout_constraintEnd_toEndOf="@+id/textViewHATitle"
         app:layout_constraintHorizontal_bias="0.432"
-        app:layout_constraintStart_toStartOf="@+id/textView_title"
-        app:layout_constraintTop_toBottomOf="@+id/textView_title" />
+        app:layout_constraintStart_toStartOf="@+id/textViewHATitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHATitle" />
 
     <Button
         android:id="@+id/buttonBMBack"
@@ -73,7 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_title"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHATitle"
         app:layout_constraintVertical_bias="0.324" />
 
     <Button
