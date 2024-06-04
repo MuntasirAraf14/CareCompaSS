@@ -16,10 +16,10 @@
         android:textColor="@color/colorWhite"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottom0f="parent"
-        app:layout_constraintEnd_toEnd0f="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottom0f="@+id/textView_logo3"
+        app:layout_constraintTop_toBottomOf="@+id/textView_logo3"
         tools:layout_editor_absoluteY="74dp" />
 
     <TextView
@@ -30,11 +30,11 @@
         android:textColor="@color/purple_200"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottom0f="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTop0f="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteY="16dp" />
 
     <Button
@@ -46,16 +46,16 @@
         android:text="BACK"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStart0f="parent"
-        app:layout_constraintTop_toBottom0f="@+id/imageViewHAD" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewHAD" />
 
     <ImageView
         android:id="@+id/imageViewHAD"
         android:layout_width="366dp"
         android:layout_height="547dp"
-        app:layout_constraintEnd_toEnd0f="parent"
-        app:layout_constraintStart_toStart0f="parent"
-        app:layout_constraintTop_toBottom0f="@+id/textViewHADTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHADTitle"
         tools:layout_editor_absoluteX="22dp"
         tools:layout_editor_absoluteY="110dp"
         tools:srcCompat="@drawable/health1" />
