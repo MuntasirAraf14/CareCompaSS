@@ -3,7 +3,9 @@ package com.exampleo1.carecompass;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +13,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -73,13 +76,24 @@ public class Book_Appointment2 extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                timePickerDialog.show();
+                startActivity(new Intent(Book_Appointment2.this, FindDoctorActivity2.class));
             }
         });
-        btnBack.setOnClickListener(new View.OnClickListener() {
+        btnBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Database db = new Database(getApplicationContext(), "CareCompass", null, 1);
+                SharedPreferences sharedpreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
+                String username = sharedpreferences.getString("username", "").toString();
 
+                if(db.checkAppointmentExists(username, title+" => "+fullname,address,contact,dateButton.getText().toString(),timeButton.getText().toString())==1){
+                    Toast.makeText(getApplicationContext(), "Appointment already booked", Toast.LENGTH_LONG).show();
+                }
+                else{db.addOrder(username, title+" => "+fullname,address,contact,0,dateButton.getText().toString(),timeButton.getText().toString(), Float.parseFloat(fees),"appointment");
+                    Toast.makeText(getApplicationContext(),"Your appointment is done successfully", Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(Book_Appointment2.this,HomeActivity2.class));
+
+                }
             }
         });
     }

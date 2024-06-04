@@ -11,13 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import com.exampleo1.carecompass.R;
 
 public class LabTestBookActivity extends AppCompatActivity {
 
@@ -30,11 +24,11 @@ public class LabTestBookActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lab_test_book);
 
 
-        edname = findViewById(R.id.editTextLTBFullname1);
-        edaddress = findViewById(R.id.editTextLTBAddress);
-        edcontact = findViewById(R.id.editTextLTBPincode);
-        edpincode = findViewById(R.id.editTextLTBFullname2);
-        btnBooking = findViewById(R.id.buttonLTBBooking);
+        edname = findViewById(R.id.editTextBMBFullname1);
+        edaddress = findViewById(R.id.editTextBMBAddress);
+        edcontact = findViewById(R.id.editTextBMBPincode);
+        edpincode = findViewById(R.id.editTextBMBFullname2);
+        btnBooking = findViewById(R.id.buttonBMBBooking);
 
 
         Intent intent = getIntent();

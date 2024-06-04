@@ -34,7 +34,7 @@ public class HomeActivity2 extends AppCompatActivity {
         CardView findDoctor = findViewById(R.id.cardFindDoctor);
         findDoctor.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 startActivity(new Intent(HomeActivity2.this, FindDoctorActivity2.class));
             }
         });
@@ -61,6 +61,15 @@ public class HomeActivity2 extends AppCompatActivity {
 
             public void onClick(View view) {
                 startActivity(new Intent(HomeActivity2.this,BuyMedicineActivity.class));
+            }
+        });
+
+        CardView health = findViewById(R.id.cardHealthDoctor);
+        health.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity2.this,HealthArticlesActivity.class));
             }
         });
     }
